@@ -13,8 +13,9 @@
 </head>
 <body>
 
-  <!-- OPTIONAL BACKGROUND VIDEO (Fades in if present, falls back gracefully to CSS magical animated gradients) -->
+  <!-- 3D MAGICAL MOVIE BACKGROUND & OPTIONAL VIDEO -->
   <div class="video-background-container" aria-hidden="true">
+    <div class="bg-3d-castle"></div>
     <video class="bg-video" autoplay loop muted playsinline>
       <source src="videos/birthday-background.mp4" type="video/mp4">
     </video>
@@ -164,31 +165,13 @@
         </h2>
 
         <div class="photo-showcase-wrapper">
-          <!-- Left Cute Friend: Unicorn -->
+          <!-- Left Cute Friend: 3D Stardust Unicorn -->
           <div class="cute-companion companion-left">
-            <div class="companion-svg unicorn-figure">
-              <svg viewBox="0 0 120 120" class="svg-character">
-                <!-- Cute Unicorn Vector Art -->
-                <ellipse cx="60" cy="75" rx="35" ry="30" fill="#fff0f5" stroke="#ffb3c6" stroke-width="3"/>
-                <circle cx="60" cy="45" r="28" fill="#ffffff" stroke="#ffb3c6" stroke-width="3"/>
-                <!-- Golden Horn -->
-                <polygon points="60,10 54,32 66,32" fill="#ffd166" stroke="#ffb703" stroke-width="2"/>
-                <!-- Rainbow Mane -->
-                <path d="M40,30 Q30,45 42,60" fill="none" stroke="#ff758c" stroke-width="6" stroke-linecap="round"/>
-                <path d="M35,38 Q25,55 38,70" fill="none" stroke="#70e000" stroke-width="6" stroke-linecap="round"/>
-                <path d="M30,48 Q20,65 35,80" fill="none" stroke="#48cae4" stroke-width="6" stroke-linecap="round"/>
-                <!-- Cute Eyes with sparkles -->
-                <ellipse cx="68" cy="45" rx="4" ry="6" fill="#4a2840"/>
-                <circle cx="70" cy="43" r="1.5" fill="#ffffff"/>
-                <!-- Rosy Cheeks -->
-                <ellipse cx="72" cy="53" rx="5" ry="3" fill="#ff8fab" opacity="0.6"/>
-                <!-- Ears -->
-                <polygon points="46,25 40,35 50,35" fill="#ffe5ec" stroke="#ffb3c6" stroke-width="2"/>
-                <!-- Star decor -->
-                <text x="75" y="25" font-size="16">✨</text>
-              </svg>
+            <div class="companion-3d-avatar float-bob">
+              <img src="images/3d-unicorn.jpg" alt="3D Stardust Baby Unicorn" class="companion-3d-img">
+              <div class="companion-avatar-glow"></div>
             </div>
-            <div class="companion-bubble">"Keep shining, Bella! 🦄"</div>
+            <div class="companion-bubble">"Keep shining, Bella! 🦄✨"</div>
           </div>
 
           <!-- THE ROYAL PHOTO FRAME -->
@@ -220,44 +203,11 @@
             </div>
           </div>
 
-          <!-- Right Cute Friend: Teddy Bear with Gift -->
+          <!-- Right Cute Friend: 3D Fluffy Teddy Bear with Gift -->
           <div class="cute-companion companion-right">
-            <div class="companion-svg teddy-figure">
-              <svg viewBox="0 0 120 120" class="svg-character">
-                <!-- Cute Teddy Bear Vector Art -->
-                <!-- Ears -->
-                <circle cx="36" cy="30" r="13" fill="#c48b58" stroke="#a06334" stroke-width="2"/>
-                <circle cx="36" cy="30" r="7" fill="#f8d3b5"/>
-                <circle cx="84" cy="30" r="13" fill="#c48b58" stroke="#a06334" stroke-width="2"/>
-                <circle cx="84" cy="30" r="7" fill="#f8d3b5"/>
-                <!-- Head -->
-                <ellipse cx="60" cy="48" rx="28" ry="25" fill="#dba36e" stroke="#a06334" stroke-width="2.5"/>
-                <!-- Snout -->
-                <ellipse cx="60" cy="54" rx="13" ry="10" fill="#f8d3b5"/>
-                <!-- Nose & Mouth -->
-                <ellipse cx="60" cy="50" rx="5" ry="3.5" fill="#5c381c"/>
-                <path d="M60,54 Q56,60 52,58 M60,54 Q64,60 68,58" fill="none" stroke="#5c381c" stroke-width="2"/>
-                <!-- Eyes -->
-                <circle cx="49" cy="43" r="3.5" fill="#361f0e"/>
-                <circle cx="50" cy="42" r="1" fill="#fff"/>
-                <circle cx="71" cy="43" r="3.5" fill="#361f0e"/>
-                <circle cx="72" cy="42" r="1" fill="#fff"/>
-                <!-- Rosy Cheeks -->
-                <ellipse cx="44" cy="51" rx="4" ry="2.5" fill="#ff8fab" opacity="0.6"/>
-                <ellipse cx="76" cy="51" rx="4" ry="2.5" fill="#ff8fab" opacity="0.6"/>
-                <!-- Party Hat -->
-                <polygon points="60,10 52,28 68,28" fill="#ff4b91" stroke="#ffb703" stroke-width="2"/>
-                <circle cx="60" cy="8" r="4" fill="#ffd166"/>
-                <!-- Body -->
-                <ellipse cx="60" cy="88" rx="25" ry="24" fill="#dba36e" stroke="#a06334" stroke-width="2"/>
-                <ellipse cx="60" cy="88" rx="16" ry="15" fill="#f8d3b5"/>
-                <!-- Gift Box held in paws -->
-                <rect x="45" y="80" width="30" height="26" rx="4" fill="#ff758c" stroke="#ff4b91" stroke-width="2"/>
-                <rect x="58" y="80" width="4" height="26" fill="#ffd166"/>
-                <rect x="45" y="91" width="30" height="4" fill="#ffd166"/>
-                <!-- Bow -->
-                <path d="M54,77 C50,72 60,72 58,78 C56,72 66,72 62,77" fill="#ffd166"/>
-              </svg>
+            <div class="companion-3d-avatar float-bob-delay">
+              <img src="images/3d-teddy.jpg" alt="3D Fluffy Teddy Bear with Gift" class="companion-3d-img">
+              <div class="companion-avatar-glow"></div>
             </div>
             <div class="companion-bubble">"Hooray for Bella! 🧸🎁"</div>
           </div>
@@ -450,6 +400,16 @@
 
         </div>
 
+        <!-- 3D PIXAR BIRTHDAY CAKE SHOWCASE -->
+        <div class="cake-3d-showcase-card">
+          <div class="cake-3d-badge">✨ 3D ENCHANTED CAKE ✨</div>
+          <div class="cake-3d-frame">
+            <img src="images/3d-cake.jpg" alt="Spectacular 3D Magical Birthday Cake" class="cake-3d-img">
+            <div class="cake-3d-aura"></div>
+          </div>
+          <p class="cake-3d-tagline">✨ Multi-tiered rainbow layers filled with sweetness & love for Bella! ✨</p>
+        </div>
+
         <div class="interactive-prompt-card">
           <p class="wish-instruction">✨ Blow the candles in your heart and make your dreamiest wish! ✨</p>
         </div>
@@ -576,6 +536,15 @@
           <h3 class="finale-text-3">
             HAPPY BIRTHDAY, BELLA! 🎂
           </h3>
+        </div>
+
+        <!-- 3D FAIRY TALE KINGDOM SHOWCASE -->
+        <div class="finale-3d-kingdom-card">
+          <div class="kingdom-img-wrapper">
+            <img src="images/3d-castle-bg.jpg" alt="3D Magical Fairy Tale Kingdom" class="finale-3d-castle-img">
+            <div class="kingdom-shimmer"></div>
+          </div>
+          <p class="kingdom-caption">🏰 Bella's Magical Candy Cloud Kingdom 🌈✨</p>
         </div>
 
         <!-- CELEBRATION ICON BANNER -->

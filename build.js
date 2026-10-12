@@ -17,14 +17,16 @@ targets.forEach(targetDir => {
     }
   });
 
-  const imgDir = path.join(targetPath, 'images');
-  if (!fs.existsSync(imgDir)) {
-    fs.mkdirSync(imgDir, { recursive: true });
+  const srcImgDir = path.join(__dirname, 'images');
+  const targetImgDir = path.join(targetPath, 'images');
+  if (!fs.existsSync(targetImgDir)) {
+    fs.mkdirSync(targetImgDir, { recursive: true });
   }
-  const photoSrc = path.join(__dirname, 'images', 'bella-photo.jpg');
-  if (fs.existsSync(photoSrc)) {
-    fs.copyFileSync(photoSrc, path.join(imgDir, 'bella-photo.jpg'));
+  if (fs.existsSync(srcImgDir)) {
+    fs.readdirSync(srcImgDir).forEach(imgFile => {
+      fs.copyFileSync(path.join(srcImgDir, imgFile), path.join(targetImgDir, imgFile));
+    });
   }
 });
 
-console.log('Build completed successfully: all files synced to public/ and dist/');
+console.log('Build completed successfully: all files and images synced to public/ and dist/');
