@@ -1,0 +1,11 @@
+{
+  "name": "bella-birthday-jb-technology",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bella's Magical Birthday Surprise Website by JB TECHNOLOGY",
+  "scripts": {
+    "build": "echo 'Static HTML/CSS ready'",
+    "dev": "echo 'Static site ready'",
+    "start": "echo 'Static site ready'"
+  }
+}
